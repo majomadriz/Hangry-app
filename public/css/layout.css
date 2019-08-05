@@ -1,0 +1,74 @@
+.container-general {
+    position: relative;
+    overflow: auto;
+    padding: 10px 20px;
+    max-width: 968;
+    margin: 0 auto;
+}
+
+.section-general {
+    padding: 40px 50px;
+}
+
+.section-general .flex-space-between {
+    align-items: flex-end;
+}
+
+.flex-space-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-justify-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-item-4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+.general-container {
+    position: relative;
+    overflow: auto;
+    padding: 10px 20px;
+    max-width: 968;
+    margin: 50px 50 auto;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 21%;
+    min-width: 240px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-4-regular {
+    width: 21%;
+    min-width: 240px;
+    margin: 2%;
+}

@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="container flex-space-between">
+            <h4 class="logo-text logo">HANGRY</h4>
+            <div class="flex-space-between">
+                <span class="menu-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                <ul class="navigation nav-hidden">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/ingredientList">Ingredientes</a></li>
+                    <li><a href="/adminSection.html">Administrar</a></li>
+
+
+                    <li class="login-wrapper">
+                        <a href="/logout" class="">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <form action="" id="ing-category-form">
+            <div class="form-group">
+                <label for="steps">Categoria</label>
+                <input type="text" class="form-control" id="ing-category" data-required="true" placeholder="Crear nueva categoría" name="ing-category">
+            </div>
+        </form>
+        <div>
+            <button class="btn btn-primary" id="createIngCategory">Crear categoría</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="logo-footer">
+                <h3 class="text-white logo">HANGRY</h3>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.14.0/dist/sweetalert2.all.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/ingredientCategoryRegister.js"></script>
+</body>
+
+</html>

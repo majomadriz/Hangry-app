@@ -1,0 +1,109 @@
+.main-nav {
+    overflow: auto;
+    padding: 2px 10px;
+    background-color: #17C1EE;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0px 3px 11px 4px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 3px 11px 4px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 3px 11px 4px rgba(0, 0, 0, 0.22);
+}
+
+.main-nav .flex-space-between {
+    height: 70px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle .fa {
+    font-size: 26px;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+.navigation li input {
+    display: block;
+    padding: 5px 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin-right: 16px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+input:focus {
+    outline: none;
+}
+
+.navigation li a:hover {
+    color: #43A6C3;
+}
+
+@media (max-width: 1024px) {
+    .main-nav,
+    .main-nav .container-gallery {
+        overflow: visible;
+    }
+    .navigation {
+        background-color: #17C1EE;
+        position: absolute;
+        top: 74px;
+        right: -14;
+        width: 300px;
+        padding: 10px 30px;
+        transition: 0.5s right;
+        margin: 0;
+    }
+    .navigation.nav-hidden {
+        right: -325px;
+        transition: 0.5s right;
+    }
+    .navigation li {
+        display: block;
+        padding: 15px 0;
+    }
+    .navigation li input {
+        display: block;
+        padding: 5px 18px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        margin-right: 16px;
+        border-radius: 50px;
+        border: 1px solid #D5A770;
+        width: 100%;
+    }
+    .navigation li button {
+        margin: 0;
+        width: 100%;
+    }
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        width: 40px;
+        justify-content: flex-end;
+    }
+}
